@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Kina - Quiz</title>
+<link href="quiz_kina.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/ries_rejser.png">
+<script src="quiz_kina.js"></script>
+</head>
+
+<body>
+	
+	<div class="modal" id="modal">
+		<div class="modal_dialog">
+			<section class="modal_content">
+				<header class="modal_header">
+					<h2 class="modal_title">Quiz</h2>
+					<a href="http://avmogensen.dk/eksamen/kina.html" class="modal_close close">&times;</a>
+				</header>
+				<div class="modal_body">
+				
+					<div class="first">
+					
+						<form id="quiz" name="quiz">
+							
+							<!-- SPØRGSMÅL 1 -->
+							<p class="question">Hvad er Kinas nationaldyr?
+								<a onclick="playSound();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_1" src="audio/quiz_kina_1.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Panda"> Panda
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Elefant"> Elefant
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Næsehorn"> Næsehorn
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<!-- SPØRGSMÅL 2 -->
+							<p class="question">Hvilken sport stammer fra Kina?
+								<a onclick="playSound_2();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_2" src="audio/quiz_kina_2.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="Tennis"> Tennis
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="Kung Fu"> Kung Fu
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="Badminton"> Badminton
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 3 -->
+							<p class="question">Hvad hedder den lange mur i Kina?
+								<a onclick="playSound_3();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_3" src="audio/quiz_kina_3.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="Den kinesiske mur"> Den kinesiske mur
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="Den gule mur"> Den gule mur
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="Kongemuren"> Kongemuren
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 4 -->
+							<p class="question">Hvad spiser de meget af i Kina?
+								<a onclick="playSound_4();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_4" src="audio/quiz_kina_4.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Sushi"> Sushi
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Ris"> Ris
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Kartofler"> Kartofler
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 5 -->
+							<p class="question">Hvor lang tid varer det kinesiske nytår?
+								<a onclick="playSound_5();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_5" src="audio/quiz_kina_5.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="10 dage"> 10 dage
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="15 dage"> 15 dage
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="20 dage"> 20 dage
+								<span class="checkmark"></span>
+							</label><br>
+
+							<input id="button" type="button" value="Se resultat" onclick="check();">
+							
+							<div id="rie_feedback_container">
+								<img id="rie_feedback" src="images/rie_basic.svg" alt="billede af rie, frontfiguren for siden">
+							</div>
+							
+						</form>
+						
+					</div>
+			
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	<div class="kina_bg"></div>
+	
+</body>
+</html>

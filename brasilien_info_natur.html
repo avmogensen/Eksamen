@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Brasilien - Natur</title>
+<link href="_info.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/ries_rejser.png">
+<script src="_info.js"></script>
+</head>
+
+<body>
+
+	<!-- MODAL -->
+	<div class="modal" id="modal">
+		<div class="modal_dialog">
+			<section class="modal_content">
+				<header class="modal_header">
+					<h1 class="modal_title">Natur</h1>
+					<a href="http://avmogensen.dk/eksamen/brasilien.html" class="modal_close close">&times;</a>
+				</header>
+
+				<div class="modal_body">
+					
+					<!-- MODAL - VENSTRE KOLONNE -->
+					<div class="first">
+						<h1>Amazonas
+							<a onclick="playSound();">
+								<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+							</a>
+						</h1>
+						<p>
+							Amazonas er en regnskov som ligger i Brasilien, der er ca. 3 gange større end Danmark.<br><br>
+							
+							Amazonas går igennem 9 lande i Sydamerika.<br><br>
+							
+							Amazonfloden er 6400 km lang, det er den 2. længste i verden.<br><br>
+							
+							Det regner ca. 4 gange så meget i Amazonas, som det gør i Danmark årligt.<br><br>
+							
+							Der er også rigtig mange i dyr i regnskoven. Der er mere end 500 pattedyr, 175 øgler og yderligere 300 krybdyr.<br><br>
+							
+							En tredjedel af alle verdens fuglearter menes at leve i Amazonas.
+						</p>
+						
+						<audio id="info" src="audio/brasilien_natur.mp3"></audio>
+						
+					</div>
+					
+					<!-- MODAL - HØJRE KOLONNE -->
+					<div class="second">
+						
+						<!-- MODAL - SLIDESHOW -->
+						<div class="container_slider">
+	
+							<input type="radio" id="i1" name="images" checked/>
+							<input type="radio" id="i2" name="images"/>
+							<input type="radio" id="i3" name="images"/>
+							<input type="radio" id="i4" name="images"/>
+							
+							<!-- MODAL - SLIDESHOW - BILLEDE #1 -->
+							<div class="slide_img" id="one">		
+								<img src="images/amazonas_1.jpg" alt="billede 1 fra slideshow">
+								<label class="prev" for="i4"><span></span></label>
+								<label class="next" for="i2"><span></span></label>	
+							</div>
+
+							<!-- MODAL - SLIDESHOW - BILLEDE #2 -->
+							<div class="slide_img" id="two">
+								<img src="images/amazonas_2.jpg" alt="billede 2 fra slideshow">
+								<label class="prev" for="i1"><span></span></label>
+								<label class="next" for="i3"><span></span></label>
+							</div>
+
+							<!-- MODAL - SLIDESHOW - BILLEDE #3 -->
+							<div class="slide_img" id="three">
+								<img src="images/amazonas_3.jpg" alt="billede 3 fra slideshow">	
+								<label class="prev" for="i2"><span></span></label>
+								<label class="next" for="i4"><span></span></label>
+							</div>
+
+							<!-- MODAL - SLIDESHOW - BILLEDE #4 -->
+							<div class="slide_img" id="four">
+								<img src="images/amazonas_4.jpg" alt="billede 4 fra slideshow">
+								<label class="prev" for="i3"><span></span></label>
+								<label class="next" for="i1"><span></span></label>
+							</div>
+
+							<!-- MODAL - SLIDESHOW - PRIKKER TIL NAVIGATION -->
+							<div id="nav_slide">
+								<label for="i1" class="dots" id="dot1"></label>
+								<label for="i2" class="dots" id="dot2"></label>
+								<label for="i3" class="dots" id="dot3"></label>
+								<label for="i4" class="dots" id="dot4"></label>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	<div class="brasilien_bg"></div>
+	
+</body>
+</html>

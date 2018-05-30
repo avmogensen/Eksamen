@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Australien - Quiz</title>
+<link href="quiz_australien.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/ries_rejser.png">
+<script src="quiz_australien.js"></script>
+</head>
+
+<body>
+	
+	<div class="modal" id="modal">
+		<div class="modal_dialog">
+			<section class="modal_content">
+				<header class="modal_header">
+					<h2 class="modal_title">Quiz</h2>
+					<a href="http://avmogensen.dk/eksamen/australien.html" class="modal_close close">&times;</a>
+				</header>
+				<div class="modal_body">
+				
+					<div class="first">
+					
+						<form id="quiz" name="quiz">
+							
+							<!-- SPØRGSMÅL 1 -->
+							<p class="question">Hvad er nationaldyret i Australien?
+								<a onclick="playSound();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_1" src="audio/quiz_australien_1.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Randers Regnskov"> Koala
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Kænguru"> Kænguru
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Kobraslange"> Kobraslange
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<!-- SPØRGSMÅL 2 -->
+							<p class="question">Hvilken sport er den mest populære i Australien?
+								<a onclick="playSound_2();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_2" src="audio/quiz_australien_2.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="Cykling"> Cykling
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="Rugby"> Rugby
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="Hockey"> Hockey
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 3 -->
+							<p class="question">Hvad hedder bygningen i Sydney, som er tegnet af en dansker?
+								<a onclick="playSound_3();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_3" src="audio/quiz_australien_3.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="Operahuset"> Operahuset
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="Great Barrier Reef"> Great Barrier Reef
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="Great Ocean Road"> Great Ocean Road
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 4 -->
+							<p class="question">Hvad spiser de mest af i Australien?
+								<a onclick="playSound_4();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_4" src="audio/quiz_australien_4.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Ris"> Ris
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Nudler"> Nudler
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Kød"> Kød
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 5 -->
+							<p class="question">Hvad spiser de til fødselsdag i Australien?
+								<a onclick="playSound_5();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_5" src="audio/quiz_australien_5.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="Fisk"> Fisk
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="Lagkage"> Lagkage
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="Fairy Bread"> Fairy Bread
+								<span class="checkmark"></span>
+							</label><br>
+
+							<input id="button" type="button" value="Se resultat" onclick="check();">
+							
+							<div id="rie_feedback_container">
+								<img id="rie_feedback" src="images/rie_basic.svg" alt="billede af rie, frontfiguren for siden">
+							</div>
+							
+						</form>
+						
+					</div>
+			
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	<div class="australien_bg"></div>
+	
+</body>
+</html>

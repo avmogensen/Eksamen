@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Brasilien - Mad & drikke</title>
+<link href="_info.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/ries_rejser.png">
+<script src="_info.js"></script>
+</head>
+
+<body>
+		
+	<!-- MODAL -->
+	<div class="modal" id="modal">
+		<div class="modal_dialog">
+			<section class="modal_content">
+				<header class="modal_header">
+					<h1 class="modal_title">Mad & drikke</h1>
+					<a href="http://avmogensen.dk/eksamen/brasilien.html" class="modal_close close">&times;</a>
+				</header>
+
+				<div class="modal_body">
+					
+					<!-- MODAL - VENSTRE KOLONNE -->
+					<div class="first">
+						<h1>Feijoada
+							<a onclick="playSound();">
+								<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+							</a>
+						</h1>
+						<p>
+							Feijoada er Brasiliens nationalret. Retten består af en blanding af sorte bønner, oksekød og svinekød.<br><br>
+							
+							Retten bliver typisk serveret med ris, pølser og frugt.
+						</p>
+						
+						<audio id="info" src="audio/brasilien_madogdrikke_1.mp3"></audio>
+						
+						<h1>Guaraná Antarctica
+							<a onclick="playSound_2();">
+								<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+							</a>
+						</h1>
+						<p>						
+							I Brasilien drikker de selvfølgelig også en del sodavand.<br><br>
+							
+							Brasilien er et af de få lande, hvor Coca Cola ikke er den mest populære sodavand.<br><br>
+							
+							I Brasilien drikker de nemlig rigtig meget "Guarana Antarctica", som er en brasiliansk sodavand.<br><br>
+							
+							Man kan også købe Guarana Antarctica i Danmark.
+						</p>
+						
+						<audio id="info_2" src="audio/brasilien_madogdrikke_2.mp3" autostart="false"></audio>
+						
+					</div>
+					
+					<!-- MODAL - HØJRE KOLONNE -->
+					<div class="second">
+						
+						<!-- MODAL - SLIDESHOW -->
+						<div class="container_slider">
+	
+							<input type="radio" id="i1" name="images" checked/>
+							<input type="radio" id="i2" name="images"/>
+							<input type="radio" id="i3" name="images"/>
+							<input type="radio" id="i4" name="images"/>
+							
+							<!-- MODAL - SLIDESHOW - BILLEDE #1 -->
+							<div class="slide_img" id="one">		
+								<img src="images/feijoada_1.jpg" alt="billede 1 fra slideshow">
+								<label class="prev" for="i2"><span></span></label>
+								<label class="next" for="i2"><span></span></label>	
+							</div>
+
+							<!-- MODAL - SLIDESHOW - BILLEDE #2 -->
+							<div class="slide_img" id="two">
+								<img src="images/guarana_1.png" alt="billede 2 fra slideshow">
+								<label class="prev" for="i1"><span></span></label>
+								<label class="next" for="i1"><span></span></label>
+							</div>
+
+							<!-- MODAL - SLIDESHOW - PRIKKER TIL NAVIGATION -->
+							<div id="nav_slide">
+								<label for="i1" class="dots" id="dot1"></label>
+								<label for="i2" class="dots" id="dot2"></label>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	<div class="brasilien_bg"></div>
+	
+</body>
+</html>

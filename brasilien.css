@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: DDC Hardware;
+	src: url("http://avmogensen.dk/ddc_hardware/DDCHardware-Regular.ttf") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    font-family: DDC Hardware;
+}
+
+body {
+	background-color: #4ca5a2;
+}
+
+.container {
+	height: 100vh;
+}
+
+.tilbage_svg {
+	width: 7%;
+	position: absolute;
+	left: 1%;
+	top: 2%;
+	z-index: 101;
+	transition: 1s;
+}
+
+.tilbage_svg:hover {
+	transform: scale(1.25);
+}
+
+.quiz_knap {
+	z-index: 200;
+	background-color: #3c4649;
+	border: none;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #3c4649;
+    -moz-box-shadow:inset 0px 0px 0px 0px #3c4649;
+    box-shadow:inset 0px 0px 0px 0px #3c4649;
+	border-radius: 5px;
+	padding: .75% 1.5%;
+	color: white;
+	font-size: 26px;
+	transition-duration: .5s;
+	position: absolute;
+	bottom: 2%;
+	right: 2%;
+	text-align: center;
+}
+
+.quiz_knap:hover {
+	background-color: white;
+	-webkit-box-shadow:inset 0px 0px 0px 3px #3c4649;
+    -moz-box-shadow:inset 0px 0px 0px 3px #3c4649;
+    box-shadow:inset 0px 0px 0px 3px #3c4649;
+	color: #3c4649;
+	cursor: pointer;
+}
+
+#brasilien_svg {
+	max-height: 100vh;
+	z-index: 98;
+	position: absolute;
+}
+
+.feijoada_svg {
+	width: 4.9%;
+	position: absolute;
+	left: 55.3%;
+	top: 39.8%;
+	z-index: 101;
+    transition: 1s;
+}
+
+.mxl_dreng_svg {
+	width: 5.2%;
+	position: absolute;
+	left: 48.5%;
+	top: 31%;
+	z-index: 101;
+    transition: 1s;
+}
+
+.amazonas_svg {
+	width: 26.5%;
+	position: absolute;
+	left: 26.7%;
+	top: 7%;
+	z-index: 100;
+    transition: 1s;
+}
+
+.ur_svg {
+	width: 2.8%;
+	position: absolute;
+	left: 61.4%;
+	top: 32.3%;
+	z-index: 100;
+	transition: 1s;
+}
+
+.iguazu_svg {
+	width: 10.7%;
+	position: absolute;
+	left: 41.4%;
+	top: 60.3%;
+	z-index: 100;
+	transition: 1s;
+}
+
+.maranhenses_svg {
+	width: 7.5%;
+	position: absolute;
+	left: 54%;
+	top: 20%;
+	z-index: 100;
+	transition: 1s;
+}
+
+.cristo_redentor_svg {
+	width: 5%;
+	position: absolute;
+	left: 56.1%;
+	top: 56.1%;
+	z-index: 99;
+	transition: 1s;
+}
+
+.mxl_dreng_svg:hover, .amazonas_svg:hover, .cristo_redentor_svg:hover, .ur_svg:hover, .iguazu_svg:hover, .maranhenses_svg:hover, .feijoada_svg:hover {
+    transform: scale(1.3);
+    transition: 1s;
+    -webkit-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.3);
+}
+
+

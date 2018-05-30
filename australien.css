@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: DDC Hardware;
+	src: url("http://avmogensen.dk/ddc_hardware/DDCHardware-Regular.ttf") format("truetype");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+    font-family: DDC Hardware;
+}
+
+body {
+	background-color: #4ca5a2;
+}
+
+.container {
+	height: 100vh;
+}
+
+.tilbage_svg {
+	width: 7%;
+	position: absolute;
+	left: 1%;
+	top: 2%;
+	z-index: 101;
+	transition: 1s;
+}
+
+.tilbage_svg:hover {
+	transform: scale(1.25);
+}
+
+.quiz_knap {
+	z-index: 200;
+	background-color: #3c4649;
+	border: none;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #3c4649;
+    -moz-box-shadow:inset 0px 0px 0px 0px #3c4649;
+    box-shadow:inset 0px 0px 0px 0px #3c4649;
+	border-radius: 5px;
+	padding: .75% 1.5%;
+	color: white;
+	font-size: 26px;
+	transition-duration: .5s;
+	position: absolute;
+	bottom: 2%;
+	right: 2%;
+	text-align: center;
+}
+
+.quiz_knap:hover {
+	background-color: white;
+	-webkit-box-shadow:inset 0px 0px 0px 3px #3c4649;
+    -moz-box-shadow:inset 0px 0px 0px 3px #3c4649;
+    box-shadow:inset 0px 0px 0px 3px #3c4649;
+	color: #3c4649;
+	cursor: pointer;
+}
+
+#australien_svg {
+	max-height: 100vh;
+	z-index: 98;
+	position: absolute;
+}
+
+.fairy_bread_svg {
+	width: 10%;
+	position: absolute;
+	left: 60%;
+	top: 33%;
+	z-index: 101;
+    transition: 1s;
+}
+
+.operahuset_svg {
+	width: 10%;
+	position: absolute;
+	left: 66%;
+	top:57.8%;
+	z-index: 101;
+    transition: 1s;
+}
+
+.rugby_svg {
+	width: 4%;
+	position: absolute;
+	left: 38.1%;
+	top: 28.2%;
+	z-index: 101;
+    transition: 1s;
+}
+
+.meat_pie_svg {
+	width: 7%;
+	position: absolute;
+	left: 48.9%;
+	top: 44%;
+	z-index: 101;
+    transition: 1s;
+}
+
+.kangaroo_svg {
+	width: 13.3%;
+	position: absolute;
+	left: 20.7%;
+	top: 44.5%;
+	z-index: 101;
+    transition: 1s;
+}
+
+.kangaroo_svg:hover, .meat_pie_svg:hover, .rugby_svg:hover, .operahuset_svg:hover, .fairy_bread_svg:hover{
+    transform: scale(1.3);
+    transition: 1s;
+    -webkit-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.3);
+}
+
+
+
+

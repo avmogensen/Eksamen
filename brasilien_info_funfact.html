@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Brasilien - Fun Fact</title>
+<link href="_info.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/ries_rejser.png">
+<script src="_info.js"></script>
+</head>
+
+<body>
+		
+	<!-- MODAL -->
+	<div class="modal" id="modal">
+		<div class="modal_dialog">
+			<section class="modal_content">
+				<header class="modal_header">
+					<h1 class="modal_title">Fun Fact</h1>
+					<a href="http://avmogensen.dk/eksamen/brasilien.html" class="modal_close close">&times;</a>
+				</header>
+
+				<div class="modal_body">
+					
+					<!-- MODAL - VENSTRE KOLONNE -->
+					<div class="first">
+						<h1>Tidszoner i Brasilien
+							<a onclick="playSound();">
+								<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+							</a>
+						</h1>
+						<p>
+							I Brasilien har man 3 tidszoner. Der er 5 timers forskel fra Rio de Janeiro til Danmark.<br><br>
+							
+							Når klokken er 12:00 i Danmark, er den 08:00 i øst, nordøst, syd og Sydøstbrasilien.<br><br>
+							
+							Men klokken er derimod 07:00 i Vestbrasilien og klokken er 06:00 i andre vestlige områder.
+
+						</p>
+						
+						<audio id="info" src="audio/brasilien_funfact.mp3"></audio>
+						
+					</div>
+					
+					<!-- MODAL - HØJRE KOLONNE -->
+					<div class="second">
+						
+						<!-- MODAL - SLIDESHOW -->
+						<div class="container_slider">
+	
+							<input type="radio" id="i1" name="images" checked/>
+							<input type="radio" id="i2" name="images"/>
+							<input type="radio" id="i3" name="images"/>
+							<input type="radio" id="i4" name="images"/>
+							
+							<!-- MODAL - SLIDESHOW - BILLEDE #1 -->
+							<div class="slide_img" id="one">		
+								<img src="images/tidszone_1.jpg" alt="billede 1 fra slideshow">
+								<label class="prev" for="i1"><span></span></label>
+								<label class="next" for="i1"><span></span></label>
+							</div>
+
+							<!-- MODAL - SLIDESHOW - PRIKKER TIL NAVIGATION -->
+							<div id="nav_slide">
+								<label for="i1" class="dots" id="dot1"></label>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	<div class="brasilien_bg"></div>
+	
+</body>
+</html>

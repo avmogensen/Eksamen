@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Kina - Seværdighed</title>
+<link href="_info.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/ries_rejser.png">
+<script src="_info.js"></script>
+</head>
+
+<body>
+		
+	<!-- MODAL -->
+	<div class="modal" id="modal">
+		<div class="modal_dialog">
+			<section class="modal_content">
+				<header class="modal_header">
+					<h1 class="modal_title">Seværdighed</h1>
+					<a href="http://avmogensen.dk/eksamen/kina.html" class="modal_close close">&times;</a>
+				</header>
+
+				<div class="modal_body">
+					
+					<!-- MODAL - VENSTRE KOLONNE -->
+					<div class="first">
+						<h1>Den kinesiske mur
+							<a onclick="playSound();">
+								<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+							</a>
+						</h1>
+						<p>
+							I gamle dage, lavede folkene i Kina en lang mur som bliver kaldt ” Den kinesiske mur”, som er oppe i Nordkina.<br><br>
+							
+							Man byggede muren for at beskytte Kina, fra at folk udefra ikke kunne passere!<br><br>
+							
+							Den kinesiske mur er ca. 21000 km lang.
+						</p>
+						
+						<audio id="info" src="audio/kina_sevxrdighed.mp3"></audio>
+						
+					</div>
+					
+					<!-- MODAL - HØJRE KOLONNE -->
+					<div class="second">
+						
+						<!-- MODAL - SLIDESHOW -->
+						<div class="container_slider">
+	
+							<input type="radio" id="i1" name="images" checked/>
+							<input type="radio" id="i2" name="images"/>
+							<input type="radio" id="i3" name="images"/>
+							<input type="radio" id="i4" name="images"/>
+							
+							<!-- MODAL - SLIDESHOW - BILLEDE #1 -->
+							<div class="slide_img" id="one">		
+								<img src="images/mur_1.jpg" alt="billede 1 fra slideshow">
+								<label class="prev" for="i3"><span></span></label>
+								<label class="next" for="i2"><span></span></label>	
+							</div>
+
+							<!-- MODAL - SLIDESHOW - BILLEDE #2 -->
+							<div class="slide_img" id="two">
+								<img src="images/mur_2.jpg" alt="billede 2 fra slideshow">
+								<label class="prev" for="i1"><span></span></label>
+								<label class="next" for="i3"><span></span></label>
+							</div>
+
+							<!-- MODAL - SLIDESHOW - BILLEDE #3 -->
+							<div class="slide_img" id="three">
+								<img src="images/mur_3.jpg" alt="billede 3 fra slideshow">
+								<label class="prev" for="i2"><span></span></label>
+								<label class="next" for="i1"><span></span></label>
+							</div>
+
+							<!-- MODAL - SLIDESHOW - PRIKKER TIL NAVIGATION -->
+							<div id="nav_slide">
+								<label for="i1" class="dots" id="dot1"></label>
+								<label for="i2" class="dots" id="dot2"></label>
+								<label for="i3" class="dots" id="dot3"></label>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	<div class="kina_bg"></div>
+	
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Danmark - Quiz</title>
+<link href="quiz_danmark.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/ries_rejser.png">
+<script src="quiz_danmark.js"></script>
+</head>
+
+<body>
+	
+	<div class="modal" id="modal">
+		<div class="modal_dialog">
+			<section class="modal_content">
+				<header class="modal_header">
+					<h2 class="modal_title">Quiz</h2>
+					<a href="http://avmogensen.dk/eksamen/danmark.html" class="modal_close close">&times;</a>
+				</header>
+				<div class="modal_body">
+				
+					<div class="first">
+					
+						<form id="quiz" name="quiz">
+							
+							<!-- SPØRGSMÅL 1 -->
+							<p class="question">Hvilket dyr kan man se i dyrehaven?
+								<a onclick="playSound();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_1" src="audio/quiz_danmark_1.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Løve"> Løve
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Hjort"> Hjort
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Elefant"> Elefant
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<!-- SPØRGSMÅL 2 -->
+							<p class="question">Hvilken sport stammer fra Danmark?
+								<a onclick="playSound_2();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_2" src="audio/quiz_danmark_2.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="Håndbold"> Håndbold
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="Fodbold"> Fodbold
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="Ishockey"> Ishockey
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 3 -->
+							<p class="question">Hvad hedder den lille statue, som mange turister besøger i Danmark?
+								<a onclick="playSound_3();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_3" src="audio/quiz_danmark_3.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="Den grimme ælling"> Den grimme ælling
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="Den lille prins"> Den lille prins
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="Den lille havfrue"> Den lille havfrue
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 4 -->
+							<p class="question">Hvad spiser man typisk i Danmark?
+								<a onclick="playSound_4();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_4" src="audio/quiz_danmark_4.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Græskartærte"> Græskartærte
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Hotdog"> Hotdog
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Forårsruller"> Forårsruller
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 5 -->
+							<p class="question">Hvor gammel er LEGO?
+								<a onclick="playSound_5();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_5" src="audio/quiz_danmark_5.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="86 år"> 86 år
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="88 år"> 88 år
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="90 år"> 90 år
+								<span class="checkmark"></span>
+							</label><br>
+
+							<input id="button" type="button" value="Se resultat" onclick="check();">
+							
+							<div id="rie_feedback_container">
+								<img id="rie_feedback" src="images/rie_basic.svg" alt="billede af rie, frontfiguren for siden">
+							</div>
+							
+						</form>
+						
+					</div>
+			
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	<div class="danmark_bg"></div>
+	
+</body>
+</html>

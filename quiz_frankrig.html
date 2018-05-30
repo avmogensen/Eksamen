@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<title>Frankrig - Quiz</title>
+<link href="quiz_frankrig.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/ries_rejser.png">
+<script src="quiz_frankrig.js"></script>
+</head>
+
+<body>
+	
+	<div class="modal" id="modal">
+		<div class="modal_dialog">
+			<section class="modal_content">
+				<header class="modal_header">
+					<h2 class="modal_title">Quiz</h2>
+					<a href="http://avmogensen.dk/eksamen/frankrig.html" class="modal_close close">&times;</a>
+				</header>
+				<div class="modal_body">
+				
+					<div class="first">
+					
+						<form id="quiz" name="quiz">
+							
+							<!-- SPØRGSMÅL 1 -->
+							<p class="question">Hvad er det højeste bjerg i Frankrig?
+								<a onclick="playSound();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_1" src="audio/quiz_frankrig_1.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Himmelbjerget"> Himmelbjerget
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Mount Everest"> Mount Everest
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_1" value="Mont Blanc"> Mont Blanc		
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<!-- SPØRGSMÅL 2 -->
+							<p class="question">Hvad hedder cykelløbet der foregår i Frankrig om sommeren?
+								<a onclick="playSound_2();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_2" src="audio/quiz_frankrig_2.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="Le Mans"> Le Mans
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="Tour de France"> Tour de France
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_2" value="Tour de Paris"> Tour de Paris
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 3 -->
+							<p class="question">Hvad hedder det store tårn som ligger i Paris?
+								<a onclick="playSound_3();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_3" src="audio/quiz_frankrig_3.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="Parisertårnet"> Parisertårnet
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="Eiffeltårnet"> Eiffeltårnet
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_3" value="Det gyldne tårn"> Det gyldne tårn
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 4 -->
+							<p class="question">Hvad spiser man typisk i Frankrig?
+								<a onclick="playSound_4();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_4" src="audio/quiz_frankrig_4.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Baguette"> Baguette
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Donuts"> Donuts
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_4" value="Pizza"> Pizza
+								<span class="checkmark"></span>
+							</label><br>
+
+							<!-- SPØRGSMÅL 5 -->
+							<p class="question">Paris er den mest besøgte by i verden, hvor mange besøger Paris om året?
+								<a onclick="playSound_5();">
+									<img class="play" src="images/play.svg" alt="knap til afspilning af spørgsmål">
+								</a>
+							</p>
+							
+							<audio id="question_5" src="audio/quiz_frankrig_5.mp3"></audio>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="15 millioner"> 15 millioner
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="25 millioner"> 25 millioner
+								<span class="checkmark"></span>
+							</label><br>
+							
+							<label class="container_radio">
+								<input type="radio" name="question_5" value="35 millioner"> 35 millioner
+								<span class="checkmark"></span>
+							</label><br>
+
+							<input id="button" type="button" value="Se resultat" onclick="check();">
+							
+							<div id="rie_feedback_container">
+								<img id="rie_feedback" src="images/rie_basic.svg" alt="billede af rie, frontfiguren for siden">
+							</div>
+							
+						</form>
+						
+					</div>
+			
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	<div class="frankrig_bg"></div>
+	
+</body>
+</html>

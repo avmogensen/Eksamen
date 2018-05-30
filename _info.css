@@ -1,0 +1,419 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: DDC Hardware;
+	src: url("http://avmogensen.dk/ddc_hardware/DDCHardware-Regular.ttf") format("truetype");
+}
+
+* {
+	font-family: DDC Hardware;
+	margin: 0;
+	padding: 0;
+}
+
+/* MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL */
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+.modal {
+	display: table;
+	background: rgba(0,0,0,.80);
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	z-index: 105;
+	padding: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+	.modal {
+		padding: 3rem 1rem 3rem 1rem;
+	}
+}
+
+.modal:target {
+	display: table;
+}
+
+.modal_dialog {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.modal_content {
+	width: 60vw;
+	min-width: 300px;
+	margin: auto;
+	position: relative;
+	animation: slideUp 1s ease-in-out;
+	max-height: 100%;
+	overflow-y: auto;
+}
+
+@media screen and (max-width: 600px) {
+	.modal_content {
+		width: 100%;
+	}
+}
+
+.modal_header {
+	background-color: #3c4649;
+	color: white;
+	padding: 1rem;
+	position: sticky;
+    top: 0;
+	text-align: center;
+	z-index: 100;
+	font-size: 22px;
+}
+
+.modal_title {
+	font-size: 2em;
+	margin: 0;
+}
+
+@media screen and (max-width: 355px) {
+	.modal_content {
+		font-size: .8em;
+	}
+}
+
+.modal_close {
+	color: #FFFFFF;
+	text-decoration: none;
+	position: absolute;
+    top: .45rem;
+	right: 1.5rem;
+	font-size: 60px;
+}
+
+@media screen and (max-width: 430px) {
+	.modal_close {
+		position: static;
+	}
+}
+
+.modal_body {
+	max-width: 60vw;
+	margin: 0 auto;
+	display: flex;
+	background-color: #BAD6E7;
+}
+
+@media screen and (max-width: 1024px) {
+	.modal_body {
+		max-width: 100vw;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.modal_body {
+		flex-direction: column;
+	}
+}
+
+.first {
+	flex: 1;
+	padding: 1rem;
+	background-color: #a0c5c2;
+	color: #1f6e6b;
+}
+
+.first h1 {
+	padding: 0;
+	margin: 0;
+	color: #3c4649;
+	font-size: 28px;
+}
+
+.first h1:nth-child(4) {
+	margin-top: 4%;
+}
+
+.first p {
+	margin: 1% 0 0 0;
+	color: #3c4649;
+	font-size: 18px;
+}
+
+.play {
+	position: relative;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	transform: translate(20%,8%);
+	z-index: 99;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.play:hover {
+	transform: scale(1.25) translateX(14%) translateY(8%);
+	box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+
+.second {
+	flex: 1;
+	padding: 1rem;
+	background-color: #70a5a2;
+}
+
+.close {
+	animation: close;
+}
+
+@keyframes slideUp {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes close {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+/* MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL MODAL */
+
+/* SLIDER SLIDER SLIDER SLIDER SLIDER SLIDER SLIDER SLIDER SLIDER SLIDER */
+
+.container_slider {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 0;
+	padding-bottom: 60%;
+	-webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.25);
+	box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.25);
+}
+
+input {
+	display: none;
+}
+
+.slide_img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+img {
+	width: inherit;
+	height: inherit;
+}
+
+.prev, .next {
+	width: 12%;
+	height: inherit;
+	position: absolute;
+	top: 0;
+	background-color: rgba(160,197,194,.50);
+	transition: .45s;
+	cursor: pointer;
+	text-align: center;
+}
+		
+.next {
+	right: 0;
+}
+		
+.prev {
+	left: 0;
+}
+
+.prev:hover, .next:hover {
+	transition: .3s;
+	background-color: rgba(160,197,194,.75);
+}
+
+.prev span, .next span {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	border: solid 20px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.prev span {
+	border-color: transparent white transparent transparent;
+	right: 35%;
+}
+.next span {
+	border-color: transparent transparent transparent white;
+	left: 35%;
+}
+
+#nav_slide {
+	width: 50%;
+	transform: translateX(50%);
+	bottom: 5%;
+	height: 18px;
+	position: absolute;
+	text-align: center;
+	cursor: default;
+	z-index: 9;
+}
+
+.dots {
+	top: 0px;
+	width: 18px;
+	height: 18px;
+	margin: 0 3px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background: rgba(160,197,194,.25);
+	border: 2px solid rgba(255,255,255,.15);
+	transition: .5s;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.5);
+	box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.5);
+}
+		
+#dot1:hover {
+	background: #a0c5c2;
+}
+
+#dot2:hover {
+	background: #a0c5c2;
+}
+
+#dot3:hover {
+	background: #a0c5c2;
+}
+
+#dot4:hover {
+	background: #a0c5c2;
+}
+
+
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three,
+#i4:checked ~ #four {
+	z-index: 9;
+	animation: scroll 1s ease-in-out;
+}
+
+#i1:checked ~ #nav_slide #dot1 {
+	background: #a0c5c2;
+	transform: scale(1.3);
+}
+
+#i2:checked ~ #nav_slide #dot2 {
+	background: #a0c5c2;
+	transform: scale(1.3);
+}
+
+#i3:checked ~ #nav_slide #dot3 {
+	background: #a0c5c2;
+	transform: scale(1.3);
+}
+
+#i4:checked ~ #nav_slide #dot4 {
+	background: #a0c5c2;
+	transform: scale(1.3);
+}
+
+@keyframes scroll {
+	0% { opacity: .4;}
+	100% { opacity: 1;}
+}
+
+@media screen and (max-width: 685px) {
+	.container_slider {
+		border: none;
+		width: 100%;
+		height: 0;
+		padding-bottom: 55%;
+	}
+
+	.prev, .next {
+		width: 15%;
+	}
+
+	.prev span, .next span {
+		border: solid 12px;
+	}
+	.prev span {
+		border-color: transparent #fff transparent transparent;
+	}
+	.next span {
+		border-color: transparent transparent transparent #fff;
+	}
+
+	#nav_slide .dots {
+		width: 12px;
+		height: 12px;
+	}
+}
+
+/* SLIDER SLIDER SLIDER SLIDER SLIDER SLIDER SLIDER SLIDER SLIDER SLIDER */
+
+.australien_bg {
+	height: 100vh;
+	background-image: url(images/australien_bg.svg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.brasilien_bg {
+	height: 100vh;
+	background-image: url(images/brasilien_bg.svg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.danmark_bg {
+	height: 100vh;
+	background-image: url(images/danmark_bg.svg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.frankrig_bg {
+	height: 100vh;
+	background-image: url(images/frankrig_bg.svg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.kina_bg {
+	height: 100vh;
+	background-image: url(images/kina_bg.svg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+
+
+
